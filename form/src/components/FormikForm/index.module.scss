@@ -1,0 +1,110 @@
+.container{
+    width: 70%;
+    height: 600px;
+    margin: 50px auto;
+    padding:50px;
+    background-color: 	#98FB98;
+    @media screen and (min-width:1200px) {
+        width: 50%;
+    }
+}
+.formStyle{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+.wrapper{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+.inputHeight{
+    height: 70px;
+  }
+  .inputStyle{
+   
+    height: 28px;
+    border: none;
+    border-bottom: 2px solid darkgreen;
+    color: darkgreen;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #98FB98;
+    outline: 0;
+}  
+.error{
+      color: orange;
+      font-size: 18px;
+}
+
+.messageWrapper{
+        width: 100%;
+        height: 70px;
+}
+.messageWrapper .message{
+    width: 400px ;
+    height: 28px;
+        border: none;
+        border-bottom: 2px solid darkgreen;
+        color: darkgreen;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #98FB98;
+        outline: 0;
+    
+}
+.btn{
+    width: 180px;
+    height: 60px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 26px;
+    border-radius: 20px;
+    border: none;
+    color:white;
+    background-color: orange;
+    
+}
+.btn:disabled{
+    opacity: 0.4;
+}
+.checkboxControl{
+    width: 100%;
+    height: 30px;
+    color: darkgreen;
+    font-size: 20px;
+    display: grid;
+  grid-template-columns: 1em auto;
+  gap: 10px;
+  }
+  .checkBox{
+    appearance: none;
+    background-color: #98FB98;
+    margin:0;
+  color: darkgreen;
+  width: 20px;
+  height:30px;
+  border: 2px solid darkgreen;
+  border-radius: 5px;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+
+  }
+  .checkBox::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    transform: scale(0);
+    box-shadow: inset 1em 1em darkgreen;
+    transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  }
+  .checkBox:checked::before {
+    transform: scale(1);
+  }
